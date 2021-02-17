@@ -1,0 +1,30 @@
+
+------git cheatsheet------
+git init: create a new git repository
+git status: inspects the contents of the working directory and staging area
+git add: add files from the working directory to the staging area
+git diff: shows the difference between the working directory and the staging area 
+git commit: permanently stores files changes from the staging area in the repository
+git log: shows a list of all the previous commits
+
+----git teamwork workflow----
+git clone: create a local copy of a remote
+git remote -v: list a git project's remotes
+git fetch: fetches work from the remote into the local copy
+git merge origin/master: merges origin/master into your local branch
+git push origin <branch_name>: pushes a local branch to the origin remote
+
+----git branch workflow----
+git branch: lists all a git's project branches
+git branch branch_name: creates a new branch
+git checkout branch_name: used to switch from one branch to another
+git merge branc_name: used to join file changes from one branch to another
+git branch -d branch_name: deletes the branch specified 
+
+----git backlogging in git----
+git checkout HEAD filename: discards changes in the working directory
+git reset HEAD filename: unstages file changes in the staging area
+git reset commit_SHA: reset to a previous commit in your commit history
+
+*additionally you learned a way to add multiple files to the staging area with a single command:
+git add filename_1 filename_2*
